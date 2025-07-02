@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Empathetic-Agent-Eliminating-911-Wait-Times
 An Idea of building a agent that works primarily in Eliminating 911 Wait times in Critical Emergency Situations.
 =======
@@ -97,59 +96,7 @@ python backend/main.py
 
 The API will be available at `http://localhost:8000`
 
-### 7. Launch the Gradio Interface
 
-```bash
-# Open a new terminal and activate the virtual environment
-python frontend/main_gradio.py
-```
-
-The interface will be available at `http://localhost:7860`
-
-## 📚 Step-by-Step Setup in VS Code
-
-### 1. Open VS Code
-
-1. Launch Visual Studio Code
-2. Open the project folder: `File > Open Folder > emergency_response_system`
-
-### 2. Set Up Python Environment
-
-1. Open Command Palette: `Ctrl+Shift+P` (Windows) or `Cmd+Shift+P` (Mac)
-2. Type: "Python: Select Interpreter"
-3. Choose the virtual environment interpreter: `./venv/Scripts/python.exe` (Windows) or `./venv/bin/python` (Mac/Linux)
-
-### 3. Install Extensions (Recommended)
-
-- **Python** (Microsoft)
-- **Pylance** (Microsoft)
-- **Python Debugger** (Microsoft)
-- **autoDocstring** (Nils Werner)
-
-### 4. Open Integrated Terminal
-
-1. Press `Ctrl+`` (backtick) to open terminal
-2. Ensure virtual environment is activated (you should see `(venv)` in terminal)
-
-### 5. Run the Test Suite
-
-```bash
-python test_system.py
-```
-
-### 6. Start Backend (Terminal 1)
-
-```bash
-python backend/main.py
-```
-
-### 7. Start Frontend (Terminal 2)
-
-Open a new terminal tab (`Ctrl+Shift+``) and run:
-
-```bash
-python frontend/main_gradio.py
-```
 
 ## 🧪 Testing Examples
 
@@ -204,79 +151,6 @@ Expected: Medical triage, heart attack protocol guidance
   - Priority classification
   - Location and metadata forwarding
 
-## 🔧 API Documentation
-
-### Start Session
-```http
-POST /sessions/start
-Content-Type: application/json
-
-{
-  "caller_info": {
-    "phone": "123-456-7890",
-    "address": "123 Main St"
-  }
-}
-```
-
-### Send Message
-```http
-POST /sessions/{session_id}/message
-Content-Type: application/json
-
-{
-  "session_id": "uuid-here",
-  "message": "Someone is unconscious"
-}
-```
-
-### Get Session Status
-```http
-GET /sessions/{session_id}/status
-```
-
-## 📈 Performance Metrics
-
-The system tracks several key metrics:
-
-- **Response Time**: Average time for agent responses
-- **Empathy Score**: Sentiment-based empathy measurement (0.0-1.0)
-- **Triage Accuracy**: Correctness of urgency classification
-- **Resolution Time**: Time to complete emergency assessment
-
-## 🛡️ Safety Features
-
-### Safety Monitoring
-- **Profanity Filtering**: Automatic content moderation
-- **Loop Breaker**: Prevents infinite conversations
-- **Safety Keywords**: Special handling for suicide/self-harm mentions
-- **Session Limits**: Maximum conversation turns
-
-### Privacy Protection
-- **Data Anonymization**: Personal information is anonymized
-- **Secure Storage**: All data encrypted at rest
-- **Audit Logging**: Complete conversation audit trails
-
-## 📋 Development Phases
-
-### ✅ Phase 1: Text-Only MVP
-- [x] Multi-agent architecture
-- [x] Gradio chat interface
-- [x] FastAPI backend
-- [x] SQLite database
-- [x] Basic analytics
-
-### 🔄 Phase 2: Voice Integration (Future)
-- [ ] Twilio voice API integration
-- [ ] Speech-to-text (ASR)
-- [ ] Text-to-speech (TTS)
-- [ ] Real-time voice processing
-
-### 📊 Phase 3: Advanced Analytics (Future)
-- [ ] Plotly Dash dashboard
-- [ ] Panel safety analytics
-- [ ] Real-time metrics
-- [ ] Performance optimization
 
 ## 🏗️ Project Structure
 
@@ -304,23 +178,6 @@ emergency_response_system/
 └── README.md                  # This file
 ```
 
-## 🤝 Contributing
-
-We welcome contributions! Please follow these steps:
-
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/amazing-feature`
-3. Commit changes: `git commit -m 'Add amazing feature'`
-4. Push to branch: `git push origin feature/amazing-feature`
-5. Open a Pull Request
-
-### Development Guidelines
-
-- Follow PEP 8 style guide
-- Add unit tests for new features
-- Update documentation
-- Ensure all tests pass
-
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
@@ -338,15 +195,6 @@ This system is not intended to replace professional emergency services and shoul
 - **UI Framework**: Gradio for rapid prototyping
 - **Backend Framework**: FastAPI for high-performance APIs
 
-## 📞 Support
-
-For questions and support:
-
-- 📧 Email: support@emergency-response-ai.com
-- 💬 Discord: [Join our community](https://discord.gg/emergency-ai)
-- 📖 Documentation: [Read the docs](https://docs.emergency-response-ai.com)
-
----
 
 **Built with ❤️ for saving lives through technology**
->>>>>>> 0a2279d (Initial commit)
+Feel Free to email : lokeshchowdary.pl@gmail.com
